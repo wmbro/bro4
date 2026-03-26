@@ -15,7 +15,7 @@ from camoufox import DefaultAddons
 
 URL_BROWSER = os.getenv("URL_BROWSER")
 URL = os.getenv("URL")
-MINUTOS = int(os.getenv("MINUTOS", 5))
+MINUTOS = MINUTOS = int((os.getenv("MINUTOS") or "5").strip())
 NUM_BROWSERS = int(os.getenv("NUM_BROWSERS", 1))
 MAX_RETRIES = 3
 
