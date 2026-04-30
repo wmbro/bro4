@@ -31,7 +31,7 @@ jobs:
           NUM_BROWSERS: ${{ secrets.NUM_BROWSERS }}
           EMAIL: ${{ secrets.EMAIL }}
           SENHA: ${{ secrets.SENHA }}
-        timeout-minutes: 30
+        timeout-minutes: 59
         continue-on-error: true
         run: |
           docker run --rm \
